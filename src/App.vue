@@ -8,7 +8,6 @@ components: {
 <template>
   <nav class="navbar navbar-expand-lg bg-success text-white fixed-top">
     <div class="container-fluid">
-      <!-- <img style="width: 100px; height: 40px" src="./assets/iCare Logo.png" alt=""> -->
       <h3>User List</h3>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
