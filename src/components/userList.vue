@@ -163,7 +163,7 @@ export default {
             return this.users.slice(startIndex, endIndex);
         },
         visiblePages() {
-            const half = Math.floor(this.visiblePageCount / 2);
+            const half = (this.visiblePageCount / 2);
             const start = Math.max(this.currentPage - half, 1);
             const end = Math.min(start + this.visiblePageCount - 1, this.totalPages);
             const count = this.visiblePageCount - (end - start + 1);
