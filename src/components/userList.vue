@@ -68,7 +68,8 @@
                     <div class="d-flex justify-content-end mb-4 ">
                         <span class="bg-secondary-subtle p-1 px-2 rounded justify-content-end d-flex"> {{ (currentPage - 1)
                             *
-                            pageSize + 1 }} - {{ Math.min(currentPage * pageSize, users.length) }} of {{ this.users.length }}
+                            pageSize + 1 }} - {{ Math.min(currentPage * pageSize, users.length) }} of {{ this.users.length
+    }}
                         </span>
                     </div>
                 </div>
@@ -167,10 +168,6 @@ export default {
             const start = Math.max(this.currentPage - half, 1);
             const end = Math.min(start + this.visiblePageCount - 1, this.totalPages);
             const count = this.visiblePageCount - (end - start + 1);
-
-            if (count > 0) {
-                start = Math.max(start - count, 1);
-            }
 
             const visiblePages = [];
             for (let i = start; i <= end; i++) {
